@@ -7,3 +7,9 @@ function userInfo(name, age, city) {
   console.log(age);
   console.log(city);
 }
+// argument order maters
+function userInfo(name, age) {
+  console.log(name, age);
+}
+
+userInfo(22, 'Blood');
