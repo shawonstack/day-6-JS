@@ -19,4 +19,33 @@ function show() {
   console.log(name);
 }
 
-show();
+// show();
+function outer() {
+  let message = 'hello';
+  function inner() {
+    console.log(message);
+  }
+  inner();
+}
+outer();
+function creaatUser() {
+  let role = 'admin';
+  function getRole() {
+    return role;
+  }
+  return getRole;
+}
+
+console.log(creaatUser());
+
+function createUser() {
+  let role = 'Admin';
+
+  function getRole() {
+    return role;
+  }
+
+  return getRole();
+}
+
+console.log(createUser());
