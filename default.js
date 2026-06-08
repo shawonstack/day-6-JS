@@ -10,9 +10,18 @@ function greet(name = 'Guest') {
   console.log(name);
 }
 
-greet(undefined);
+// greet(undefined);
 function createUser(name, username = name) {
   console.log(username);
 }
 
-createUser('blood');
+// createUser('blood');
+
+// -----------------
+function getUsers(page = 1, limit = 10) {
+  console.log(`Page: ${page}`);
+
+  console.log(`Limit: ${limit}`);
+}
+
+getUsers();
