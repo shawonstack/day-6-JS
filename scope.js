@@ -49,3 +49,24 @@ function createUser() {
 }
 
 console.log(createUser());
+let x = 10;
+
+function test() {
+  console.log(x);
+}
+
+test();
+let company = 'Apple';
+
+function outer() {
+  let department = 'iOS';
+
+  function inner() {
+    console.log(company);
+    console.log(department);
+  }
+
+  inner();
+}
+
+outer();
